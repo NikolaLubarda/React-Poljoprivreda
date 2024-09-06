@@ -30,11 +30,17 @@ export default function Slider() {
           timeout={600}
           classNames="fade"
         >
-          <img
-            src={slides[currentIndex]}
-            alt={`Slide ${currentIndex}`}
-            className="w-full h-full object-cover absolute top-0 left-0"
-          />
+          <div className="relative w-full h-full flex items-center justify-center">
+            <img
+              src={slides[currentIndex]}
+              alt={`Slide ${currentIndex}`}
+              className="object-cover"
+              style={{
+                maxHeight: "calc(100% - 6vh)",
+                maxWidth: "calc(100% - 6vh)",
+              }}
+            />
+          </div>
         </CSSTransition>
       </TransitionGroup>
       <button

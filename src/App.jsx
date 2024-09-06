@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <Pocetna />
+      <Pocetna className="bg-green-10" />
     </>
   );
 }

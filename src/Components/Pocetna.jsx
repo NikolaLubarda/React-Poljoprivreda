@@ -1,15 +1,17 @@
 import React from "react";
 import Slider from "./Slider";
-import SplitSekcija from "./SplitSekcija";
 import DodatneSlike from "./DodatneSlike";
+import MotivationalSections from "./MotivationalSections";
 
-const Pocetna = () => {
+const Pocetna = ({ className }) => {
   return (
     <div>
-      <div className="relative">
-        <Slider className="z-10" />
-        <SplitSekcija className="z-20" />
-        <DodatneSlike className="z-30" />
+      <div className={` ${className}`}>
+        <Slider />
+        <div>
+          <MotivationalSections />
+        </div>
+        <DodatneSlike />
       </div>
     </div>
   );

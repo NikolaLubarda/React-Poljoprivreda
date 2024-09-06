@@ -3,7 +3,7 @@ export default function Navbar() {
     <nav className="bg-white w-full fixed top-0 shadow-lg z-10">
       <div className="container mx-auto flex justify-center items-center py-4">
         <div className=" mr-20 text-green-600">
-          <h1 className="text-xl font-semibold">POLJOPRIVREDA</h1>
+          <h1 className="text-xl font-semibold ">POLJOPRIVREDA</h1>
         </div>
         <ul className="flex space-x-6">
           <li>
