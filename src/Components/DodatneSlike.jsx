@@ -1,5 +1,14 @@
 import React from "react";
 
+import Traktor from "../OpremaSlike/Traktor.jpg";
+import Alati from "../OpremaSlike/Alati.jpg";
+import Freza from "../OpremaSlike/Freza.jpg";
+import Motokultivator from "../OpremaSlike/Motokultivator.png";
+import Prikolica from "../OpremaSlike/Prikolica.jpg";
+import Kosacica from "../OpremaSlike/Kosacica.jpg";
+import TraktorKosacica from "../OpremaSlike/TraktorKosacica.jpg";
+import RotacioniKultivator from "../OpremaSlike/RotacioniKultivator.jpg";
+
 export default function DodatneSlike() {
   return (
     <div>
@@ -22,32 +31,60 @@ export default function DodatneSlike() {
 
       {/* Male slike ispod glavnog sadržaja */}
       <div className="flex space-x-2 p-10 overflow-x-auto">
-        <div className="flex-shrink-0">
+        <div className="flex-1">
           <img
-            src="https://via.placeholder.com/150"
+            src={Traktor}
             alt="Slika 1"
-            className="w-40 h-40 object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
+            className="w-full h-auto object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
           />
         </div>
-        <div className="flex-shrink-0">
+        <div className="flex-1">
           <img
-            src="https://via.placeholder.com/150"
+            src={Freza}
             alt="Slika 2"
-            className="w-40 h-40 object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
+            className="w-full h-auto object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
           />
         </div>
-        <div className="flex-shrink-0">
+        <div className="flex-1">
           <img
-            src="https://via.placeholder.com/150"
+            src={Alati}
             alt="Slika 3"
-            className="w-40 h-40 object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
+            className="w-full h-auto object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
           />
         </div>
-        <div className="flex-shrink-0">
+        <div className="flex-1">
           <img
-            src="https://via.placeholder.com/150"
+            src={Kosacica}
             alt="Slika 4"
-            className="w-40 h-40 object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
+            className="w-full h-auto object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
+          />
+        </div>
+        <div className="flex-1">
+          <img
+            src={Motokultivator}
+            alt="Slika 5"
+            className="w-full h-auto object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
+          />
+        </div>
+        <div className="flex-1">
+          <img
+            src={Prikolica}
+            alt="Slika 6"
+            className="w-full h-auto object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
+          />
+        </div>
+        <div className="flex-1">
+          <img
+            src={RotacioniKultivator}
+            alt="Slika 7"
+            className="w-full h-auto object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
+          />
+        </div>
+        <div className="flex-1">
+          <img
+            src={TraktorKosacica}
+            alt="Slika 8"
+            className="w-full h-auto object-cover rounded-md shadow-md transition-transform transform hover:scale-105"
           />
         </div>
       </div>

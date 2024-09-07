@@ -34,12 +34,22 @@ export default function Slider() {
             <img
               src={slides[currentIndex]}
               alt={`Slide ${currentIndex}`}
-              className="object-cover"
-              style={{
-                maxHeight: "calc(100% - 6vh)",
-                maxWidth: "calc(100% - 6vh)",
-              }}
+              className="object-cover w-full h-full"
             />
+            {/* Veće dugme centrirano u slideru */}
+            <a
+              href="#"
+              className="absolute text-white text-3xl font-bold bg-green-500 bg-opacity-60 py-6 px-10 rounded-lg shadow-lg transform translate-y-[150%] opacity-0 transition-all duration-500 ease-out hover:translate-y-0 hover:opacity-100"
+              style={{
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              <div className="flex items-center justify-center">
+                <span className="mr-2">Poljoprivreda</span>
+              </div>
+            </a>
           </div>
         </CSSTransition>
       </TransitionGroup>
